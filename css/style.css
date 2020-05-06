@@ -1,5 +1,6 @@
 /* Basic Rules */
 body {
+  margin-top: 80px;
   font-family: Roboto,Verdana;
   color: #0a2253;
   background-color: grey;
@@ -7,6 +8,10 @@ body {
 
 a {
   color: #0a2253;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 ul {
@@ -18,6 +23,28 @@ li {
 }
 /* End Basic Rules */
 
+/* Generic Rules */
+.cre_absolute {
+  position: absolute;
+}
+
+.cre_relative {
+  position: relative;
+}
+
+.cre_white-text {
+  color: white;
+}
+
+.cre_blue-text {
+  color: #006aff;
+}
+
+.cre_lightblue-text {
+  color: #096fff;
+}
+/* End Generic Rules */
+
 /* Buttons */
 .cre_btn-account {
   background-color: white;
@@ -25,6 +52,31 @@ li {
   border: 1px solid #016bff;
   border-radius: 5px;
   padding: 8px 13px;
+}
+
+.cre_btn-create {
+  background-color: #579aff;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 13px;
+  display: block;
+}
+
+.cre_btn-google {
+  background-color: white;
+  color: #6d6d6d;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 8px 13px;
+  display: block;
+  margin: 10px 0;
+}
+
+.cre_btn-google img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 20px;
 }
 /* End Buttons */
 
@@ -41,5 +93,52 @@ li {
 
 .cre_burgernav {
   font-size: 30px;
-  color: red;
 }
+
+.cre_jumbotron {
+  background-image: url(../img/bg-home-1-d54581d7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.cre_jumbotron h1 {
+  font-size: 65px;
+}
+
+.cre_jumbotron p {
+  font-size: 23px;
+}
+
+.cre_getstarted {
+  padding: 35px 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.cre_getstarted-text p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-control {
+  border: 1px solid #f0f0f0;
+  height: 50px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.form-control::placeholder {
+  font-size: 18px;
+  color: #757575;
+}
+
+label {
+  display: none;
+}
+/* End Form */
