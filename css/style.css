@@ -1,9 +1,16 @@
+.debug .container {
+  border: 1px solid blue
+}
+
+.debug [class*=col-] {
+  border: 1px solid red
+}
+
 /* Basic Rules */
 body {
   margin-top: 80px;
   font-family: Roboto,Verdana;
   color: #0a2253;
-  background-color: grey;
 }
 
 a {
@@ -42,6 +49,10 @@ li {
 
 .cre_lightblue-text {
   color: #096fff;
+}
+
+.cre_grey-text {
+  color: #64718e;
 }
 /* End Generic Rules */
 
@@ -141,3 +152,43 @@ label {
   display: none;
 }
 /* End Form */
+
+.customers {
+  padding: 40px 0;
+}
+
+.customers .container .row [class*=col-]{
+  line-height: 132px;
+}
+
+.customers img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .customers .container .row [class*=col-]{
+    line-height: 250px;
+  }
+
+  .customers img {
+    max-width: 300px;
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers .container .row [class*=col-]{
+    line-height: 200px;
+  }
+
+  .customers img {
+    max-width: 240px;
+
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cre_jumbotron h1 {
+    font-size: 35px;
+  }
+}
