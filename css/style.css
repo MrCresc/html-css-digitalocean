@@ -1,0 +1,45 @@
+/* Basic Rules */
+body {
+  font-family: Roboto,Verdana;
+  color: #0a2253;
+  background-color: grey;
+}
+
+a {
+  color: #0a2253;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+li {
+  margin: 0 5px;
+}
+/* End Basic Rules */
+
+/* Buttons */
+.cre_btn-account {
+  background-color: white;
+  color: #016bff;
+  border: 1px solid #016bff;
+  border-radius: 5px;
+  padding: 8px 13px;
+}
+/* End Buttons */
+
+/* Navbar */
+.cre_navbar {
+  height: 80px;
+  background-color: white;
+  line-height: 80px;
+}
+
+.cre_navbar .logo {
+  height: 30px;
+}
+
+.cre_burgernav {
+  font-size: 30px;
+  color: red;
+}
