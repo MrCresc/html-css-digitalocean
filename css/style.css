@@ -1,9 +1,13 @@
 .debug .container {
-  border: 1px solid blue
+  border: 1px solid blue;
+}
+
+.debug .row {
+  border: 1px solid green;
 }
 
 .debug [class*=col-] {
-  border: 1px solid red
+  border: 1px solid red;
 }
 
 /* Basic Rules */
@@ -53,6 +57,13 @@ li {
 
 .cre_grey-text {
   color: #64718e;
+}
+
+.cre_title p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #5c6a88;
+  padding: 5px 0;
 }
 /* End Generic Rules */
 
@@ -153,35 +164,103 @@ label {
 }
 /* End Form */
 
-.customers {
+/* Customers */
+.cre_customers {
   padding: 40px 0;
 }
 
-.customers .container .row [class*=col-]{
+.cre_customers .container .row [class*=col-] {
   line-height: 132px;
 }
 
-.customers img {
+.cre_customers img {
   width: 100%;
 }
+/* End Customers */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .customers .container .row [class*=col-]{
+/* Deploy */
+.cre_deploy-wrapper {
+  padding: 20px;
+}
+
+.cre_deploy-list {
+  margin-top: 20px;
+  border-left: 1px solid #76819b;
+  margin-bottom: 40px;
+}
+
+.cre_deploy-list li {
+  font-size: 20px;
+  padding: 10px;
+  color: #76819b;
+}
+
+.cre_deploy-item {
+  padding-top: 20px;
+  min-height: 180px;
+}
+
+.cre_deploy-item p {
+  color: #5e6b89;
+}
+
+.cre_viewer {
+  padding: 30px;
+}
+
+.cre_viewer img {
+  width: 60%;
+}
+
+.cre_viewer i {
+  font-size: 40px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.cre_slider i {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.cre_features {
+  padding: 100px 0 25px;
+}
+
+.cre_features-item {
+  padding: 25px 15px;
+}
+
+.cre_features-item p {
+  color: #5e6b89;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .cre_viewer > a {
+    display: none;
+  }
+
+  .cre_customers .container .row [class*=col-]{
     line-height: 250px;
   }
 
-  .customers img {
+  .cre_customers img {
     max-width: 300px;
 
   }
 }
 
 @media screen and (max-width: 767px) {
-  .customers .container .row [class*=col-]{
+  .cre_customers .container .row [class*=col-]{
     line-height: 200px;
   }
 
-  .customers img {
+  .cre_customers img {
     max-width: 240px;
 
   }
