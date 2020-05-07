@@ -65,6 +65,10 @@ li {
   color: #5c6a88;
   padding: 5px 0;
 }
+
+.cre_skyblue-text {
+  color: #00d0d1;
+}
 /* End Generic Rules */
 
 /* Buttons */
@@ -235,23 +239,40 @@ label {
   color: #5e6b89;
 }
 
+.cre_speedtest {
+  background: linear-gradient(to bottom, #0048c5 0%, #001e99 100%);
+  color: white;
+  padding: 50px 0;
+}
+
+.cre_row-bordered {
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  margin: 0 5px;
+}
+
+
+
 /* Media Queries */
 @media screen and (max-width: 1199px) {
 
 }
 
 @media screen and (max-width: 991px) {
-  .cre_viewer > a {
-    display: none;
-  }
-
   .cre_customers .container .row [class*=col-]{
     line-height: 250px;
   }
 
   .cre_customers img {
     max-width: 300px;
+  }
 
+  .cre_viewer > a {
+    display: none;
+  }
+
+  .cre_speedtest .container > .row > [class*=col-]:nth-child(2) {
+    padding-top: 35px;
   }
 }
 
@@ -264,10 +285,26 @@ label {
     max-width: 240px;
 
   }
+
+  .cre_viewer img {
+    width: 80%;
+  }
+
+  .cre_speedtest {
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .cre_jumbotron h1 {
     font-size: 35px;
+  }
+
+  .cre_viewer img {
+    width: 100%;
+  }
+
+  .cre_speedtest {
+    font-size: 10px;
   }
 }
