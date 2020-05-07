@@ -10,6 +10,8 @@
   border: 1px solid red;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* Basic Rules */
 body {
   margin-top: 80px;
@@ -33,6 +35,8 @@ li {
   margin: 0 5px;
 }
 /* End Basic Rules */
+
+/* ------------------------------------------------------------------------- */
 
 /* Generic Rules */
 .cre_absolute {
@@ -69,7 +73,13 @@ li {
 .cre_skyblue-text {
   color: #00d0d1;
 }
+
+.cre_gradient-bg {
+  background: linear-gradient(to bottom, #0048c5 0%, #001e99 100%);
+}
 /* End Generic Rules */
+
+/* ------------------------------------------------------------------------- */
 
 /* Buttons */
 .cre_btn-account {
@@ -105,6 +115,8 @@ li {
 }
 /* End Buttons */
 
+/* ------------------------------------------------------------------------- */
+
 /* Navbar */
 .cre_navbar {
   height: 80px;
@@ -119,7 +131,9 @@ li {
 .cre_burgernav {
   font-size: 30px;
 }
-
+/* End Navbar */
+/* ------------------------------------------------------------------------- */
+/* Jumbotron */
 .cre_jumbotron {
   background-image: url(../img/bg-home-1-d54581d7.jpg);
   background-repeat: no-repeat;
@@ -145,7 +159,8 @@ li {
   font-weight: bold;
   font-size: 30px;
 }
-
+/* End Jumbotron */
+/* ------------------------------------------------------------------------- */
 /* Form */
 .form-group {
   margin-bottom: 0;
@@ -167,7 +182,7 @@ label {
   display: none;
 }
 /* End Form */
-
+/* ------------------------------------------------------------------------- */
 /* Customers */
 .cre_customers {
   padding: 40px 0;
@@ -181,7 +196,7 @@ label {
   width: 100%;
 }
 /* End Customers */
-
+/* ------------------------------------------------------------------------- */
 /* Deploy */
 .cre_deploy-wrapper {
   padding: 20px;
@@ -207,6 +222,12 @@ label {
 .cre_deploy-item p {
   color: #5e6b89;
 }
+/* End Deploy */
+/* ------------------------------------------------------------------------- */
+/* Developers */
+.cre_developers {
+  padding-top: 30px;
+}
 
 .cre_viewer {
   padding: 30px;
@@ -223,10 +244,13 @@ label {
 }
 
 .cre_slider i {
+  color: #006aff;
   font-size: 15px;
-  padding: 5px;
+  padding: 2px;
 }
-
+/* End Developers */
+/* ------------------------------------------------------------------------- */
+/* Features */
 .cre_features {
   padding: 100px 0 25px;
 }
@@ -238,9 +262,10 @@ label {
 .cre_features-item p {
   color: #5e6b89;
 }
-
+/* End Features */
+/* ------------------------------------------------------------------------- */
+/* Speed Test */
 .cre_speedtest {
-  background: linear-gradient(to bottom, #0048c5 0%, #001e99 100%);
   color: white;
   padding: 50px 0;
 }
@@ -250,14 +275,84 @@ label {
   border-bottom: 1px solid white;
   margin: 0 5px;
 }
+/* End Speed Test */
+/* ------------------------------------------------------------------------- */
+/* Developers 2 Rockerbox */
+.rockerbox {
+  display: inline-block;
+  width: 500px;
+  vertical-align: middle;
+  margin: 40px 0;
+}
 
+.rockerbox h4 {
+  padding: 20px 10px;
+  color: #5e6c8a;
+}
 
+#cre_readstory .cre_lightblue-text {
+  display: block;
+}
 
-/* Media Queries */
+#cre_readstory .rockerbox {
+  width: 70%;
+}
+
+#cre_readstory .cre_slider {
+  margin: 80px 0 20px;
+}
+/* End Developers 2 Rockerbox */
+/* ------------------------------------------------------------------------- */
+/* Final Divider Get Started */
+.cre_end-main {
+  height: 200px;
+}
+
+.cre_end-main .cre_absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cre_end-main .cre_absolute h2 {
+padding: 0 0 20px;
+margin: 0;
+}
+/* Final Divider Get Started */
+/* ------------------------------------------------------------------------- */
+/* Footer */
+footer {
+  background: linear-gradient(to bottom, #021d5b 0%, #031c4e 100%);
+  padding: 60px 0;
+  color: #a6adbd;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer a {
+  color: #a6adbd;
+}
+
+footer i {
+  font-size: 18px;
+}
+
+footer li {
+  padding: 3px 0;
+  margin: 0;
+}
+/* End Footer */
+
+/* ------------------------------------------------------------------------- */
+
+/* Media Queries MD */
 @media screen and (max-width: 1199px) {
 
 }
-
+/* ------------------------------------------------------------------------- */
+/* Media Queries SM */
 @media screen and (max-width: 991px) {
   .cre_customers .container .row [class*=col-]{
     line-height: 250px;
@@ -275,7 +370,8 @@ label {
     padding-top: 35px;
   }
 }
-
+/* ------------------------------------------------------------------------- */
+/* Media Queries XS */
 @media screen and (max-width: 767px) {
   .cre_customers .container .row [class*=col-]{
     line-height: 200px;
@@ -283,7 +379,6 @@ label {
 
   .cre_customers img {
     max-width: 240px;
-
   }
 
   .cre_viewer img {
@@ -294,7 +389,8 @@ label {
     font-size: 11px;
   }
 }
-
+/* ------------------------------------------------------------------------- */
+/* Media Queries per visualizzazione responsive su Samsung Galaxy S20 */
 @media screen and (max-width: 360px) {
   .cre_jumbotron h1 {
     font-size: 35px;
